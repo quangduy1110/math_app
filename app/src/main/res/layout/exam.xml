@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".exam"
+    android:orientation="vertical"
+    android:background="@drawable/bgr_question">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_cauhoiso_exam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cau"
+                android:text="Câu: "
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="50dp"
+              android:orientation="horizontal"
+              android:paddingTop="5dp"
+              android:layout_marginLeft="190dp">
+              <com.airbnb.lottie.LottieAnimationView
+                  android:id="@+id/anim_time"
+                  android:layout_width="60dp"
+                  android:layout_height="60dp"
+                  app:lottie_loop="true"
+                  app:lottie_rawRes="@raw/time"
+                  />
+              <TextView
+                  android:id="@+id/tv_time"
+                  android:layout_width="50dp"
+                  android:layout_height="wrap_content"
+                  android:text="time"
+                  android:layout_marginTop="8dp"
+                  android:layout_gravity="center"
+                  android:textStyle="bold"
+                  android:textColor="@color/black"
+                  android:textSize="20sp"/>
+          </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/img_speak"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/speak"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/tv_cauhoi_exam"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:text="Questions_hinhhoc"
+            android:textColor="#FF5722"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:src="@drawable/bg_question"/>
+
+        <ImageView
+            android:id="@+id/img_noidung_exam"
+            android:layout_width="360dp"
+            android:layout_height="260dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bt_da1_exam"
+                    android:layout_width="130dp"
+                    android:layout_height="81dp"
+                    android:background="@drawable/button_wood"
+                    android:text="answer1"
+                    android:textSize="16sp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="@color/white"
+                    />
+                <Button
+                    android:id="@+id/bt_true_da1_exam"
+                    android:layout_width="130dp"
+                    android:layout_height="81dp"
+                    android:background="@drawable/icon_true"
+                    android:visibility="gone"/>
+                <Button
+                    android:id="@+id/bt_false_da1_exam"
+                    android:layout_width="130dp"
+                    android:layout_height="81dp"
+                    android:background="@drawable/icon_false"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp">
+
+                <Button
+                    android:id="@+id/bt_da2_exam"
+                    android:layout_width="130dp"
+                    android:layout_height="81dp"
+                    android:background="@drawable/button_wood"
+                    android:text="answer2"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    />
+                <Button
+                    android:id="@+id/bt_true_da2_exam"
+                    android:layout_width="130dp"
+                    android:layout_height="81dp"
+                    android:background="@drawable/icon_true"
+                    android:visibility="gone"/>
+                <Button
+                    android:id="@+id/bt_false_da2_exam"
+                    android:layout_width="130dp"
+                    android:layout_height="81dp"
+                    android:background="@drawable/icon_false"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bt_da3_exam"
+                    android:layout_width="130dp"
+                    android:layout_height="81dp"
+                    android:background="@drawable/button_wood"
+                    android:text="answer3"
+                    android:textSize="16sp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="@color/white"
+                    />
+                <Button
+                    android:id="@+id/bt_true_da3_exam"
+                    android:layout_width="130dp"
+                    android:layout_height="81dp"
+                    android:background="@drawable/icon_true"
+                    android:visibility="gone"/>
+                <Button
+                    android:id="@+id/bt_false_da3_exam"
+                    android:layout_width="130dp"
+                    android:layout_height="81dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/icon_false"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp">
+
+                <Button
+                    android:id="@+id/bt_da4_exam"
+                    android:layout_width="130dp"
+                    android:layout_height="81dp"
+                    android:background="@drawable/button_wood"
+                    android:text="answer4"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    />
+                <Button
+                    android:id="@+id/bt_true_da4_exam"
+                    android:layout_width="130dp"
+                    android:layout_height="81dp"
+                    android:background="@drawable/icon_true"
+                    android:visibility="gone"/>
+                <Button
+                    android:id="@+id/bt_false_da4_exam"
+                    android:layout_width="130dp"
+                    android:layout_height="81dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/icon_false"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="40dp">
+        <ImageView
+            android:id="@+id/img_next_exam"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/btn_next"
+            />
+    </LinearLayout>
+
+</LinearLayout>

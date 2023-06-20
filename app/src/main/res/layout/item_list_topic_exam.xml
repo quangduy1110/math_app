@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_hinhanh_kt"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:paddingRight="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_noidung_kt"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Nội dung"
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/custom_textview"/>
+    </LinearLayout>
+
+
+</LinearLayout>

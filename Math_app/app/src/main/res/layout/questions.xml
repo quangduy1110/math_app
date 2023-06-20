@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".questions"
+    android:orientation="vertical"
+    android:background="@drawable/bg_cauhoi">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cau"
+        android:text="Câu:"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:text="content_question"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:gravity="center">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="81dp"
+                android:background="@drawable/button_wood"
+                android:text="answer1"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="81dp"
+                android:background="@drawable/button_wood"
+                android:text="answer2"
+                android:layout_marginLeft="60dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="81dp"
+                android:background="@drawable/button_wood"
+                android:text="answer3"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="81dp"
+                android:background="@drawable/button_wood"
+                android:text="answer4"
+                android:layout_marginLeft="60dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="40dp">
+        <ImageView
+            android:id="@+id/img_home_dk"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/btn_next"
+            />
+    </LinearLayout>
+
+</LinearLayout>

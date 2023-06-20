@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background_cay">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:fontFamily="@font/chicle"
+        android:gravity="center"
+        android:text="BÉ HỌC TOÁN"
+        android:textColor="#3C3838"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_marginTop="90dp"
+        android:paddingTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"/>
+
+<!--        <com.airbnb.lottie.LottieAnimationView-->
+<!--            android:id="@+id/anim_load"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:visibility="invisible"-->
+<!--            app:lottie_rawRes="@raw/load"/>-->
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bt_dang_nhap"
+                android:layout_marginTop="5dp"
+                android:layout_width="311dp"
+                android:layout_height="81dp"
+                android:background="@drawable/custom_button"
+                android:text="ĐĂNG Nhập"
+                android:fontFamily="@font/acme"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/bt_dang_ky"
+                android:layout_marginTop="5dp"
+                android:layout_width="311dp"
+                android:layout_height="81dp"
+                android:background="@drawable/custom_button"
+                android:text="ĐĂNG KÝ"
+                android:fontFamily="@font/acme"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_forgotpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Quên mật khẩu"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+</LinearLayout>
